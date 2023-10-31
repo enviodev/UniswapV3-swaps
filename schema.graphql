@@ -1,3 +1,32 @@
+type LiquidityPool @entity {
+  " Smart contract address of the pool "
+  id: String!
+
+  " Name of liquidity pool (e.g. Curve.fi DAI/USDC/USDT) "
+  name: String!
+
+  " Symbol of liquidity pool (e.g. 3CRV) "
+  symbol: String!
+
+  " Current tick representing the price of token0/token1 "
+  tick: BigInt!
+
+  " All trade volume occurred for a specific input token, in native amount. The ordering should be the same as the pool's `inputTokens` field. "
+  cumulativeVolumeByTokenAmount: [BigInt!]!
+
+  " Total number of trades (swaps) "
+  cumulativeSwapCount: Int!
+
+  " Timestamp of the last time this entity was updated "
+  lastUpdateTimestamp: BigInt!
+
+  " Block number of the last time this entity was updated "
+  lastUpdateBlockNumber: BigInt!
+
+  " All trade (swap) events occurred in this pool "
+  swaps: [Swap!]! @derivedFrom(field: "liquidityPool")
+}
+
 type Swap @entity {
   id: ID!
   recipient: String!
@@ -10,4 +39,13 @@ type Swap @entity {
   blockNumber: Int!
   blockTimestamp: Int!
   transactionHash: String!
+  liquidityPool: LiquidityPool!
 }
+
+# type AddressMetrics @entity {
+#   id: ID!
+#   numberOfSwaps: BigInt!
+#   token0Volume: BigInt!
+#   token1Volume: BigInt!
+#   swaps: [Swap!]! @derivedFrom(field: "addressMetrics")
+# }
