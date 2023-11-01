@@ -41,11 +41,3 @@ type Swap @entity {
   transactionHash: String!
   liquidityPool: LiquidityPool!
 }
-
-# type AddressMetrics @entity {
-#   id: ID!
-#   numberOfSwaps: BigInt!
-#   token0Volume: BigInt!
-#   token1Volume: BigInt!
-#   swaps: [Swap!]! @derivedFrom(field: "addressMetrics")
-# }

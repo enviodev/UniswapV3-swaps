@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       envio:
-        specifier: 0.0.20
-        version: 0.0.20
+        specifier: 0.0.21
+        version: 0.0.21
       ts-node:
         specifier: ^10.9.1
         version: 10.9.1(@types/node@18.16.1)(typescript@5.0.4)
@@ -455,37 +455,37 @@ packages:
       once: 1.4.0
     dev: false
 
-  /envio-darwin-arm64@0.0.20:
-    resolution: {integrity: sha512-bUA5D/9ZQZNs4XRrodmU+VRFpoSSBx0GBH/L4Zz6QigNFZFIqRnDLAyoTlD0HwkW5sDe/kGtXMquc/KuxCtgxA==}
+  /envio-darwin-arm64@0.0.21:
+    resolution: {integrity: sha512-YvHSx1wvVY96PTvzXDZI4f0lB4KnDIChwuy/PSHdhJavEyTs2G5hvKUIt/X2Kuu9k1dA0rjrBrk+ktwbFqXzsw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /envio-darwin-x64@0.0.20:
-    resolution: {integrity: sha512-3mCKqQ09aZqz6zsWCfqPWUUa3NnEH8Zoj/j3EcLSZ6sgQPzdaPGY2n+A2tzNT2j9pxKxbJoZ/1Shz9XVw2UXXg==}
+  /envio-darwin-x64@0.0.21:
+    resolution: {integrity: sha512-Mvwr6G7iOXx3+cmV7BwKbuaAyhyQ5NNzWNUi2RwPFbHd9SgCMIFhXiQYwI0mmmxsvUL5Whgpo4RPHsKRL665/Q==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /envio-linux-x64@0.0.20:
-    resolution: {integrity: sha512-CI8mwtEPViMis9DZc6Rp9PDZV+LIRpKK+cMeuekiulKNUHe4EPvoCT+dZbG/HtRgkkcdqWarHtzmNp95O7TYfw==}
+  /envio-linux-x64@0.0.21:
+    resolution: {integrity: sha512-vAGOfkJzy3kd6PwO5gkdw/B1H8/7bDOkad+QDY0Ou8BEX3NHfvgdy+HqI6gQg6khMSO9Nk5V3SOQWvfqVs0EXA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /envio@0.0.20:
-    resolution: {integrity: sha512-oW9ShyO+k13xokODqflzPe/CoOS6Yg+a4d0t45NC1IHb1iEdYVpz9tqdocNlLDZZzCN2sQSh5jAsIxGmHmlVnQ==}
+  /envio@0.0.21:
+    resolution: {integrity: sha512-LViQRUkmdWtsCntSDmmgMW5l8zAQrQaCHbW3iQy7JBeQ+RD8ZWEHKeK3FA1HCBMftnGufMVsfmi6OWggJCjVng==}
     hasBin: true
     optionalDependencies:
-      envio-darwin-arm64: 0.0.20
-      envio-darwin-x64: 0.0.20
-      envio-linux-x64: 0.0.20
+      envio-darwin-arm64: 0.0.21
+      envio-darwin-x64: 0.0.21
+      envio-linux-x64: 0.0.21
     dev: false
 
   /escalade@3.1.1:

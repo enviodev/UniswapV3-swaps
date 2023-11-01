@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "ts-node": "^10.9.1",
-    "envio": "0.0.20"
+    "envio": "0.0.21"
   }
 }
